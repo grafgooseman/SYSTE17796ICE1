@@ -15,7 +15,18 @@ public class Main {
             mediumTemps.add(getRandomNumber(-60,60));
         }
         System.out.println("Avarage: "+calcAvq(mediumTemps));
+        System.out.println("Max value: "+calcMax(mediumTemps));
 
+    }
+
+    public static int calcMax(ArrayList<Integer> arrayToMax){
+        int theBiggestInt = Integer.MIN_VALUE;
+        for(int i:arrayToMax){
+            if(i > theBiggestInt){
+                theBiggestInt = i;
+            }
+        }
+        return theBiggestInt;
     }
 
     public static double calcAvq(ArrayList<Integer> arrayToAvq){
