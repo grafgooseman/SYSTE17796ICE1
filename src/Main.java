@@ -10,7 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Integer> mediumTemps = new ArrayList<Integer>();
-        for (int i = 0; i<14;i++){
+        //here I am editing code and instead 14 temperature days there will be 28
+        for (int i = 0; i<28;i++){
             mediumTemps.add(getRandomNumber(-60,60));
         }
         System.out.println("Avarage: "+calcAvq(mediumTemps));
